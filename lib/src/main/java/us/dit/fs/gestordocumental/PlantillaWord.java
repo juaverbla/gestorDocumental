@@ -54,7 +54,7 @@ public class PlantillaWord {
     	 XWPFParagraph para1 = document.createParagraph();
          para1.setAlignment(ParagraphAlignment.BOTH);          
          XWPFRun para1Run = para1.createRun();
-         para1Run.setFontFamily("Courier");
+         para1Run.setFontFamily("Calibri");
          para1Run.setColor("0000FF");
          para1Run.setFontSize(20);
          para1Run.setText(texto);
@@ -71,7 +71,7 @@ public class PlantillaWord {
          XWPFRun subTitleRun = subTitle.createRun();
          subTitleRun.setText(texto);
          subTitleRun.setColor("00CC44");
-         subTitleRun.setFontFamily("Courier");         
+         subTitleRun.setFontFamily("Calibri");         
          subTitleRun.setFontSize(12);
          subTitleRun.setTextPosition(20);
          subTitleRun.setUnderline(UnderlinePatterns.DOT_DOT_DASH);
@@ -87,7 +87,7 @@ public class PlantillaWord {
         XWPFRun titleRun = title.createRun();
         titleRun.setText(titulo);
         titleRun.setColor("FF4500");       
-        titleRun.setFontFamily("Courier");
+        titleRun.setFontFamily("Calibri");
         titleRun.setFontSize(12);
     }   
     /**

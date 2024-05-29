@@ -50,7 +50,27 @@ class TestPlantillaWord {
 	        assertEquals(wordDocument.convertTextFileToString("parrafo.txt"), paragraphs.get(2).getText());
 	       
 	    }
-	}
+	
+
+	    @Test
+	    public void parrafosCalibri() throws Exception {
+	        Path msWordPath = Paths.get("Quijote.docx");
+	        logger.info("path ", msWordPath);
+	        XWPFDocument document = new XWPFDocument(Files.newInputStream(msWordPath));
+	        List<XWPFParagraph> paragraphs = document.getParagraphs();
+	        
+	        for (XWPFParagraph paragraph : paragraphs) {
+	            for (XWPFRun run : paragraph.getRuns()) {
+	                assertEquals("Calibri", run.getFontFamily());
+	            }
+	
+	        
+	        document.close();
+	        }
+	    }
+}
+
+
 
 
 

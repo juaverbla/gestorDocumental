@@ -1,0 +1,31 @@
+#Se ignora el directorio de cache de gradle
+
+/.gradle/
+
+
+#Se ignora el fichero gradle.properties con los credenciales del usuario
+
+gradle.properties
+
+#Se ignora el directorio build
+
+build
+
+bin
+
+#Ignoro los directorios que crea el IDE en el espacio de trabajo
+
+.classpath
+.project
+
+#Se ignoran los .class
+
+*.class
+
+!gradle/wrapper/gradle-wrapper.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
